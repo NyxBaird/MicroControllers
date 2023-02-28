@@ -131,7 +131,11 @@ void drawClimateData(float h, float f, float h2, float f2) {
     lcd.print((char) 223);
     lcd.print((int) h2);
     lcd.print("% SET:");
-    lcd.print((int) (humidifier.currentStep / (float) humidifier.stepsToMax * 100));
+    if (humidifier.isOn)
+        lcd.print((int) (humidifier.currentStep / (float) humidifier.stepsToMax * 100));
+    else
+        lcd.print("off");
+
     lcd.print("%");
 }
 void drawGetTarget() {
