@@ -5,11 +5,14 @@ IRrecv irrecv(A0);
 decode_results results;
 
 #include <Stepper.h>
+
+//Our humidifier is controlled by a four wire stepper motor glued to the knob lol
 struct Humidifier{
 
-    //Set target functions
-    int targetInt = 0;
-    int currentTargetIndex = 0;
+    //Set target humidity stuff
+    int targetInt = 0; //This is the actual var we use to set the target humidity
+
+    int currentTargetIndex = 0; //The index in target[] the user is currently setting
     char target[2] = {'0', '0'};
 
     bool settingTarget = false;
@@ -105,7 +108,6 @@ struct Humidifier{
 };
 Humidifier humidifier;
 
-
 #include <Adafruit_Sensor.h>
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(8, 9, 10, 11, 12, 13);
@@ -114,6 +116,7 @@ LiquidCrystal lcd(8, 9, 10, 11, 12, 13);
 DHT onboard_sensor(2, DHT11);
 DHT offboard_sensor(3, DHT11);
 
+//The default display- shows all relevant climate data.
 void drawClimateData(float h, float f, float h2, float f2) {
     lcd.clear();
     lcd.setCursor(0, 0);
@@ -138,6 +141,8 @@ void drawClimateData(float h, float f, float h2, float f2) {
 
     lcd.print("%");
 }
+
+//Shows the screen to allow our user to pick a target humidity
 void drawGetTarget() {
     lcd.clear();
 
@@ -151,7 +156,7 @@ void drawGetTarget() {
     lcd.print("Nav with Bck/Fwd");
 }
 
-
+//Prints errors
 void printError(String error) {
     Serial.println("Error: " + error);
 
@@ -162,9 +167,9 @@ void printError(String error) {
     lcd.print(error);
 }
 
+//Handles IR control signals
 void runIrFunc(unsigned long cmd) {
-
-//    Serial.println("IR command: " + String(cmd, HEX));
+    Serial.println("IR command: " + String(cmd, HEX));
 
     switch(cmd) {
         case 0xFFA25D: //Power btn
@@ -254,31 +259,37 @@ void runIrFunc(unsigned long cmd) {
             else
                 humidifier.setByPercentage(90);
             break;
-//        default:
-//            printError("Invalid IR command!");
+        default:
+            break;
     }
 }
 
 void setup() {
-    lcd.begin(16, 2);
+    Serial.begin(9600);
+    Serial.println("hello!");
 
+    //Init our LCD
+    lcd.begin(16, 2);
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Initializing...");
 
+    //Init our humidifier stepper
     humidifier.stepper.setSpeed(10);
     humidifier.reset();
 
-    Serial.begin(9600);
-    Serial.println("hello!");
-
+    //Init our  temp/humidity sensors
     onboard_sensor.begin();
     offboard_sensor.begin();
 
+    //Init our IR receiver
     irrecv.enableIRIn();
 }
 
+int lastH2 = 0;
+bool hitTarget = false;
 void loop() {
+    //Read our onboard sensor
     float h = onboard_sensor.readHumidity();
     float f = onboard_sensor.readTemperature(true);
     if (isnan(h) || isnan(f)) {
@@ -286,6 +297,7 @@ void loop() {
         return;
     }
 
+    //Read our offboard sensor
     float h2 = offboard_sensor.readHumidity();
     float f2 = offboard_sensor.readTemperature(true);
     if (isnan(h2) || isnan(f2)) {
@@ -294,9 +306,9 @@ void loop() {
     }
 
     if (humidifier.settingTarget)
-        drawGetTarget();
+        drawGetTarget(); //Ask our user what the desired humidity is
     else
-        drawClimateData(h, f, h2, f2);
+        drawClimateData(h, f, h2, f2); //Show our climate data
 
     //Catch remote commands
     if (irrecv.decode(&results)) {
@@ -304,13 +316,31 @@ void loop() {
         irrecv.resume(); // Receive the next value
     }
 
+    //Automate our humidifer based on existing parameters
     if (!humidifier.settingTarget && humidifier.targetInt > 0 && humidifier.isOn) {
-        int percentage = 100 - h2 - (100 - humidifier.targetInt);
+        int upperBuffer = 2;
 
-        if (h2 < humidifier.targetInt - 5)
-            percentage = 100;
+        if (hitTarget && h2 < humidifier.targetInt)
+            hitTarget = false;
 
-        humidifier.setByPercentage(percentage);
+        if (!hitTarget && h2 >= humidifier.targetInt + upperBuffer)
+            hitTarget = true;
+
+        if (hitTarget)
+            humidifier.setByPercentage(0);
+        else {
+            int percentage = 100 - h2 - (100 - humidifier.targetInt);
+
+            //Give us a buffer above our target before we turn off completely
+            if (h2 >= humidifier.targetInt && h2 < humidifier.targetInt + upperBuffer)
+                percentage = 1;
+
+            //If our humidity is less than 8% below our target, turn to full
+            if (h2 < humidifier.targetInt - 10)
+                percentage = 100;
+
+            humidifier.setByPercentage(percentage);
+        }
     }
 
     delay(100);
