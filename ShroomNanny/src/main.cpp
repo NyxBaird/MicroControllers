@@ -88,7 +88,8 @@ struct Humidifier{
             if (softOff && percentage > 0) {
                 stepper.step(stepsToPowerOn);
                 softOff = false;
-            }
+            } else if (softOff && percentage == 0)
+                return;
 
             int piece = stepsToMax / 100;
             int steps = -(currentStep - (piece * percentage));
