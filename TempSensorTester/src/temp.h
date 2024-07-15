@@ -1,14 +1,10 @@
-//
-// Created by Admir on 7/10/2023.
-//
-
-#ifndef TEMPSENSORTESTER_TEMP_H
-#define TEMPSENSORTESTER_TEMP_H
 
 
-class temp {
 
-};
+void setup() {
 
+}
 
-#endif //TEMPSENSORTESTER_TEMP_H
+void loop() {
+     // Delay for 1 second before reading again
+}

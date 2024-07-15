@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="RGBNode2023" targetName="Z_DUMMY_TARGET" />
+      <config projectName="RGBNode2023" targetName="Production" />
+      <config projectName="RGBNode2023" targetName="Debug" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="esp32dev" ENABLED="true" CONFIG_NAME="esp32dev" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="471cc696-2cb4-480b-9879-578490512a32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/.github/workflows/githubci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/Adafruit_NeoPixel.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/Adafruit_NeoPixel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/esp.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/esp8266.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/RGBWstrandtest/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/RGBWstrandtest/.trinket.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/RGBWstrandtest/RGBWstrandtest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestArduinoBLE/.none.test.only" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestArduinoBLE/StrandtestArduinoBLE.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestArduinoBLECallback/.none.test.only" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestArduinoBLECallback/StrandtestArduinoBLECallback.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE/.none.test.only" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE/BLESerial.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE/BLESerial.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE/StrandtestBLE.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE_nodelay/.none.test.only" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE_nodelay/BLESerial.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE_nodelay/BLESerial.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE_nodelay/StrandtestBLE_nodelay.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/buttoncycler/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/buttoncycler/buttoncycler.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/simple/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/simple/simple.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/simple_new_operator/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/simple_new_operator/simple_new_operator.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/strandtest/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/strandtest/strandtest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/strandtest_nodelay/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/strandtest_nodelay/strandtest_nodelay.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/strandtest_wheel/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/examples/strandtest_wheel/strandtest_wheel.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/kendyte_k210.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/keywords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Adafruit_NeoPixel-master/rp2040_pio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3dPrinter" beforeDir="false" afterPath="$PROJECT_DIR$/../3dPrinter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnviroNode" beforeDir="false" afterPath="$PROJECT_DIR$/../EnviroNode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Heartichoke" beforeDir="false" afterPath="$PROJECT_DIR$/../Heartichoke" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlantNanny" beforeDir="false" afterPath="$PROJECT_DIR$/../PlantNanny" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RGBNode" beforeDir="false" afterPath="$PROJECT_DIR$/../RGBNode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TempNode" beforeDir="false" afterPath="$PROJECT_DIR$/../TempNode" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:esp32dev" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PUS1DoHftH4Ij9KRjDoIfcwgXN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/Admir/CLionProjects/RGBNode2023/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "serialmonitor.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admir\CLionProjects\RGBNode2023\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PlatformIO.PlatformIO Upload">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Z_DUMMY_TARGET" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RGBNode2023" TARGET_NAME="Z_DUMMY_TARGET" CONFIG_NAME="esp32dev" RUN_TARGET_PROJECT_NAME="RGBNode2023" RUN_TARGET_NAME="Z_DUMMY_TARGET">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatformIO Debug" type="platformio" factoryName="PlatformIO Debug" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RGBNode2023" TARGET_NAME="Debug" CONFIG_NAME="esp32dev" RUN_TARGET_PROJECT_NAME="RGBNode2023" RUN_TARGET_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RGBNode2023" TARGET_NAME="Production" CONFIG_NAME="esp32dev" RUN_TARGET_PROJECT_NAME="RGBNode2023" RUN_TARGET_NAME="Production">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Z_DUMMY_TARGET" />
+      <item itemvalue="PlatformIO.PlatformIO Debug" />
+      <item itemvalue="PlatformIO.PlatformIO Upload" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="471cc696-2cb4-480b-9879-578490512a32" name="Changes" comment="" />
+      <created>1683509949827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683509949827</updated>
+      <workItem from="1683509950942" duration="2810000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

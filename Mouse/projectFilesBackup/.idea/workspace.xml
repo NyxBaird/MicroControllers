@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Mouse" targetName="Production" />
+      <config projectName="Mouse" targetName="Debug" />
+      <config projectName="Mouse" targetName="Z_DUMMY_TARGET" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="teensy40" ENABLED="true" CONFIG_NAME="teensy40" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac65b55b-bcc5-4185-9130-799e7f68e64c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/.github/workflows/githubci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/Adafruit_NeoPixel.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/Adafruit_NeoPixel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/esp.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/esp8266.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/RGBWstrandtest/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/RGBWstrandtest/.trinket.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/RGBWstrandtest/RGBWstrandtest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestArduinoBLE/.none.test.only" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestArduinoBLE/StrandtestArduinoBLE.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestArduinoBLECallback/.none.test.only" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestArduinoBLECallback/StrandtestArduinoBLECallback.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE/.none.test.only" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE/BLESerial.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE/BLESerial.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE/StrandtestBLE.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE_nodelay/.none.test.only" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE_nodelay/BLESerial.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE_nodelay/BLESerial.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/StrandtestBLE_nodelay/StrandtestBLE_nodelay.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/buttoncycler/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/buttoncycler/buttoncycler.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/simple/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/simple/simple.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/simple_new_operator/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/simple_new_operator/simple_new_operator.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/strandtest/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/strandtest/strandtest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/strandtest_nodelay/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/strandtest_nodelay/strandtest_nodelay.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/strandtest_wheel/.esp8266.test.skip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/examples/strandtest_wheel/strandtest_wheel.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/kendyte_k210.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/keywords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/lib/Adafruit_NeoPixel-master/rp2040_pio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RGBNode2023/src/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPM Tester/src/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/Adafruit_Sensor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/Adafruit_Sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/examples/sensortest/sensortest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/Adafruit_Sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/examples/sensortest/sensortest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Adafruit_Sensor-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/.github/workflows/githubci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/DHT.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/DHT.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/DHT_U.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/DHT_U.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/code-of-conduct.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/examples/DHT_Unified_Sensor/DHT_Unified_Sensor.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/examples/DHTtester/DHTtester.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/keywords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/DHT-sensor-library-master/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/README.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/Autoscroll/Autoscroll.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/Blink/Blink.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/Cursor/Cursor.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/CustomCharacter/CustomCharacter.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/Display/Display.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/HelloWorld/HelloWorld.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/Scroll/Scroll.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/SerialDisplay/SerialDisplay.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/TextDirection/TextDirection.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/examples/setCursor/setCursor.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/keywords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/src/LiquidCrystal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/LiquidCrystal/src/LiquidCrystal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/README.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/examples/MotorKnob/MotorKnob.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/examples/stepper_oneRevolution/stepper_oneRevolution.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/examples/stepper_oneStepAtATime/stepper_oneStepAtATime.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/examples/stepper_speedControl/stepper_speedControl.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/keywords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/src/Stepper.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/lib/Stepper/src/Stepper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny2/src/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/Adafruit_Sensor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/Adafruit_Sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/examples/sensortest/sensortest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/Adafruit_Sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/examples/sensortest/sensortest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Adafruit_Sensor-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/.github/ISSUE_TEMPLATE/bug_report.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/.github/ISSUE_TEMPLATE/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/.github/workflows/LibraryBuild.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/.github/workflows/PlatformIoPublish.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/Contributing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/Contributors.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/Doxyfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/AllProtocolsOnLCD/ADCUtils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/AllProtocolsOnLCD/ADCUtils.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/AllProtocolsOnLCD/AllProtocolsOnLCD.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/AllProtocolsOnLCD/LiquidCrystal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/AllProtocolsOnLCD/LiquidCrystal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/AllProtocolsOnLCD/LiquidCrystal_I2C.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/AllProtocolsOnLCD/LiquidCrystal_I2C.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/AllProtocolsOnLCD/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ControlRelay/ControlRelay.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ControlRelay/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRDispatcherDemo/DemoIRCommandMapping.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRDispatcherDemo/IRCommandDispatcher.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRDispatcherDemo/IRCommandDispatcher.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRDispatcherDemo/IRDispatcherDemo.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRDispatcherDemo/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRremoteExtensionTest/IRremoteExtensionClass.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRremoteExtensionTest/IRremoteExtensionClass.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRremoteExtensionTest/IRremoteExtensionTest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRremoteExtensionTest/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/IRremoteInfo/IRremoteInfo.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/MicroGirs/MicroGirs.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/MicroGirs/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveAndSend/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveAndSend/ReceiveAndSend.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveAndSendDistanceWidth/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveAndSendDistanceWidth/ReceiveAndSendDistanceWidth.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveDemo/IRremote_SendDemo_ReceiveDemo.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveDemo/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveDemo/ReceiveDemo.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveDump/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveDump/ReceiveDump.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveDump/ReceiveDump.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveOneAndSendMultiple/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiveOneAndSendMultiple/ReceiveOneAndSendMultiple.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/ReceiverTimingAnalysis/ReceiverTimingAnalysis.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendAndReceive/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendAndReceive/SendAndReceive.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendAndReceive/SendAndReceive.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendBoseWaveDemo/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendBoseWaveDemo/SendBoseWaveDemo.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendDemo/IRremote_SendDemo_ReceiveDemo.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendDemo/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendDemo/SendDemo.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendLGAirConditionerDemo/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendLGAirConditionerDemo/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendLGAirConditionerDemo/SendLGAirConditionerDemo.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendProntoDemo/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendProntoDemo/SendProntoDemo.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendRawDemo/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SendRawDemo/SendRawDemo.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SimpleReceiver/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SimpleReceiver/SimpleReceiver.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SimpleReceiverWithCallback/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SimpleReceiverWithCallback/SimpleReceiverWithCallback.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SimpleSender/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/SimpleSender/SimpleSender.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/TinyReceiver/TinyReceiver.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/TinySender/TinySender.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/UnitTest/PinDefinitionsAndMore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/UnitTest/UnitTest.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/UnitTest/UnitTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/examples/UnitTest/UnitTest_64bit.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/keywords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/library.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/pictures/BoseWaveMusicSystem.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/pictures/IR_PWM_by_software_detail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/pictures/IR_PWM_by_software_jitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/pictures/LGRemote1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/pictures/LG_AKB73315611.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/pictures/LG_AKB75415316.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/pictures/SloeberDefineSymbols.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/IRFeedbackLED.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/IRProtocol.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/IRProtocol.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/IRReceive.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/IRSend.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/IRremote.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/IRremote.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/IRremoteInt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/LongUnion.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/TinyIR.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/TinyIRReceiver.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/TinyIRSender.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ac_LG.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ac_LG.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/digitalWriteFast.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_BangOlufsen.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_BoseWave.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_Denon.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_DistanceWidthProtocol.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_FAST.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_JVC.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_Kaseikyo.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_LG.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_Lego.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_MagiQuest.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_NEC.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_Others.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_Pronto.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_RC5_RC6.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_Samsung.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_Sony.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/ir_Template.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Arduino-IRremote-master/src/private/IRTimer.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/.github/workflows/githubci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/DHT.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/DHT.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/DHT_U.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/DHT_U.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/code-of-conduct.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/examples/DHT_Unified_Sensor/DHT_Unified_Sensor.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/examples/DHTtester/DHTtester.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/keywords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/DHT-sensor-library-master/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/README.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/examples/MotorKnob/MotorKnob.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/examples/stepper_oneRevolution/stepper_oneRevolution.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/examples/stepper_oneStepAtATime/stepper_oneStepAtATime.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/examples/stepper_speedControl/stepper_speedControl.ino" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/keywords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/library.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/src/Stepper.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/lib/Stepper/src/Stepper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShroomNanny3/src/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StillAirBoxLight/src/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TeensyESPTester/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3dPrinter" beforeDir="false" afterPath="$PROJECT_DIR$/../3dPrinter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnviroNode" beforeDir="false" afterPath="$PROJECT_DIR$/../EnviroNode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Heartichoke" beforeDir="false" afterPath="$PROJECT_DIR$/../Heartichoke" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlantNanny" beforeDir="false" afterPath="$PROJECT_DIR$/../PlantNanny" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RGBNode" beforeDir="false" afterPath="$PROJECT_DIR$/../RGBNode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TempNode" beforeDir="false" afterPath="$PROJECT_DIR$/../TempNode" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:teensy40" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1.2" />
+  </component>
+  <component name="ProjectId" id="2QokbdwLYZV0EYP7ffV3oMc6W8o" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;serialmonitor.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admir\CLionProjects\Mouse\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PlatformIO.PlatformIO Upload">
+    <configuration name="Z_DUMMY_TARGET" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Mouse" TARGET_NAME="Z_DUMMY_TARGET" CONFIG_NAME="teensy40" RUN_TARGET_PROJECT_NAME="Mouse" RUN_TARGET_NAME="Z_DUMMY_TARGET">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatformIO Debug" type="platformio" factoryName="PlatformIO Debug" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Mouse" TARGET_NAME="Debug" CONFIG_NAME="teensy40" RUN_TARGET_PROJECT_NAME="Mouse" RUN_TARGET_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Mouse" TARGET_NAME="Production" CONFIG_NAME="teensy40" RUN_TARGET_PROJECT_NAME="Mouse" RUN_TARGET_NAME="Production">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Z_DUMMY_TARGET" />
+      <item itemvalue="PlatformIO.PlatformIO Debug" />
+      <item itemvalue="PlatformIO.PlatformIO Upload" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac65b55b-bcc5-4185-9130-799e7f68e64c" name="Changes" comment="" />
+      <created>1686027393621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686027393621</updated>
+      <workItem from="1686027394589" duration="7519000" />
+      <workItem from="1686118520396" duration="1341000" />
+      <workItem from="1686261201608" duration="5517000" />
+      <workItem from="1686706389595" duration="7426000" />
+      <workItem from="1686764733050" duration="11286000" />
+      <workItem from="1686861190784" duration="14505000" />
+      <workItem from="1687066297588" duration="2634000" />
+      <workItem from="1687146017998" duration="1270000" />
+      <workItem from="1687218118212" duration="1105000" />
+      <workItem from="1687238381963" duration="14007000" />
+      <workItem from="1688786452068" duration="3416000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

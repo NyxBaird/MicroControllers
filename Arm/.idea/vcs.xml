@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../3dPrinter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../EnviroNode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Heartichoke" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PlantNanny" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../RGBNode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../TempNode" vcs="Git" />
+  </component>
+</project>
