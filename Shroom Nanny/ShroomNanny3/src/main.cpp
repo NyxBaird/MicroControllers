@@ -58,7 +58,7 @@ struct PowerBtn {
  * WiFi Settings
  */
 const char* ssid = "SkyeNet";
-const char* password = "ernorubiks";
+const char* password = "password";
 IPAddress local_IP(192, 168, 0, 231);
 IPAddress gateway(192, 168, 0, 1);    // Typically the router
 IPAddress subnet(255, 255, 255, 0);
