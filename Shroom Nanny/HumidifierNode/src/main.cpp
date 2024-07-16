@@ -46,12 +46,16 @@ struct Knob{
         return false;
     }
 
-    void reset() {
+    void reset(bool turnOff = false) {
         Serial.println("Resetting humidifier...");
+
+        String returnMessage = "humidifier_reset";
+        if (turnOff)
+            returnMessage = "humidifier_off";
 
         if (!isRedLightOn() && !isGreenLightOn()) {
             Serial.println("Humidifier is already off.");
-            nanny.println("humidifier_reset");
+            nanny.println(returnMessage);
             return;
         }
 
@@ -65,7 +69,7 @@ struct Knob{
 
         isOn = false;
 
-        nanny.println("humidifier_reset");
+        nanny.println(returnMessage);
     }
 
     void turnOn() {
@@ -204,7 +208,7 @@ void loop() {
             Serial.println("From server: " + message);
 
         if (message.equals("reset") || message.equals("turn_off")) {
-            knob.reset();
+            knob.reset(message.equals("turn_off"));
 
         } else if (message.equals("turn_on")) {
             knob.turnOn();

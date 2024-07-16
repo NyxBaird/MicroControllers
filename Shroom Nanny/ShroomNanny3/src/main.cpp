@@ -24,18 +24,6 @@
 #define WIREADDR 0x44
 #define TCAADDR 0x70
 int tcaAssigned = 0; //Our count of tca ports assigned
-
-#define NUM_LEDS 3
-CRGB leds[NUM_LEDS];
-
-#define PHOTORESISTOR 39
-
-
-/*
- * SYSTEM
- */
-String version = "4.1";
-unsigned long currentMillis;
 static void tcaSelect(uint8_t i) {
     //Our second tca is actually wired into our 7th i2c port
     if (i == 2)
@@ -47,6 +35,23 @@ static void tcaSelect(uint8_t i) {
     Wire.write(1 << i);
     Wire.endTransmission();
 } //Selects the current TCA i2c port
+
+
+/*
+ * SYSTEM
+ */
+String version = "4.1";
+unsigned long currentMillis;
+struct PowerBtn {
+    PowerBtn() {
+        pinMode(36, INPUT);
+        isOn();
+    }
+
+    static bool isOn() {
+        return analogRead(36) > 3200;
+    }
+};
 
 
 /*
@@ -236,7 +241,7 @@ struct Humidifier {
     unsigned long performanceStart = millis();
 
     unsigned long lastPing = 0;
-    const unsigned long verificationInterval = 10000; // If no valid ping for 10 seconds then mark as disconnected
+    const unsigned long verificationInterval = 15000; // If no valid ping for 10 seconds then mark as disconnected
 
     bool onBreak = false;
 
@@ -259,7 +264,7 @@ struct Humidifier {
         settingTarget = !settingTarget;
     }
     void setByPercentage(int to) {
-        if (!isOn || to < 0)
+        if (!isOn || !PowerBtn::isOn() || to < 0)
             return;
 
         targetPercentage = to;
@@ -282,7 +287,7 @@ struct Humidifier {
     void togglePower() {
         if (isOn)
             sendCommand("turn_off");
-        else
+        else if (PowerBtn::isOn())
             sendCommand("turn_on");
     }
 
@@ -443,61 +448,58 @@ Sensor offboard_bot_sensor;
 struct Buzzer {
     int pin;
 
+    int noteDuration = 200;
+
     unsigned long lastWaterTone = 0;
     int waterToneInterval = 30000;
 
     explicit Buzzer(int buzzerPin) : pin(buzzerPin) {}
 
-    void init() {
+    void init() const {
         pinMode(pin, OUTPUT);
-
-        //Play a happy little startup arpeggio
-        int duration = 200;
-        tone(pin, 261, duration);
-        tone(pin, 329, duration);
-        tone(pin, 392, duration);
-        tone(pin, 523, duration);
     }
 
     void needsWaterTone() {
-        if (!rtc.isDay() || millis() - lastWaterTone < waterToneInterval)
+        if (!rtc.isDay() || millis() - lastWaterTone < waterToneInterval || !PowerBtn::isOn())
             return;
 
-        int duration = 200;
-        tone(pin, 523, duration);
-        tone(pin, 392, duration);
-        tone(pin, 311, duration);
-        tone(pin, 392, duration);
-        tone(pin, 311, duration);
-        tone(pin, 261, duration);
+        needsWater();
 
         lastWaterTone = millis();
+    }
+
+    void startup() const {
+        tone(pin, 261, noteDuration);
+        tone(pin, 329, noteDuration);
+        tone(pin, 392, noteDuration);
+        tone(pin, 523, noteDuration);
+    }
+
+    void shutdown() const {
+        tone(pin, 523, noteDuration);
+        tone(pin, 392, noteDuration);
+        tone(pin, 329, noteDuration);
+        tone(pin, 261, noteDuration);
+    }
+
+    void needsWater() const {
+        tone(pin, 523, noteDuration);
+        tone(pin, 392, noteDuration);
+        tone(pin, 311, noteDuration);
+        tone(pin, 392, noteDuration);
+        tone(pin, 311, noteDuration);
+        tone(pin, 261, noteDuration);
     }
 };
 Buzzer buzzer(26);
 
 
-/**
- * Power Button
- */
-struct PowerBtn {
-    bool isOn = false;
-
-    PowerBtn() {
-        pinMode(36, INPUT);
-    }
-
-    bool checkState() {
-        isOn = analogRead(36) > 3200;
-        return isOn;
-    }
-};
-PowerBtn power;
-
-
 /*
  * Status Lights
  */
+#define NUM_LEDS 3
+CRGB leds[NUM_LEDS];
+#define PHOTORESISTOR 39
 unsigned long lastWaterStatusUpdate;
 bool isWaterStatusOff = false;
 unsigned long lastPerformingActionUpdate;
@@ -591,9 +593,9 @@ struct Screen {
         //Now draw our background
         tft.fillScreen(TFT_BLACK);
 
-        if (!power.isOn) {
+        if (!PowerBtn::isOn()) {
             tft.setTextColor(TFT_RED);
-            tft.drawString("POWERED OFF", 10, (screenH / 2 - 5), 4);
+            tft.drawString("POWERED OFF", 40, (screenH / 2 - 5), 4);
             return;
         }
 
@@ -671,7 +673,7 @@ struct Screen {
                 status = "Off";
             }
 
-            tft.drawString(": " + status, 168, statusY - 25, 4);
+            tft.drawString(": " + status, 175, statusY - 25, 4);
         }
 
 
@@ -871,14 +873,23 @@ void setup() {
 /*
  * ...haven't we run this one before?
  */
+bool lastPowerState = false;
 void loop() {
     bool refreshScreen = false;
 
     setStatusLights();
 
-    bool lastPowerState = power.isOn;
-    if (lastPowerState != power.checkState())
+
+    if (lastPowerState != PowerBtn::isOn()) {
+        lastPowerState = PowerBtn::isOn();
+        if (lastPowerState)
+            buzzer.startup();
+        else
+            buzzer.shutdown();
+
         refreshScreen = true;
+    }
+
 
     WiFiClient client = server.available(); //Listen for incoming clients
     if (client) {
@@ -911,14 +922,14 @@ void loop() {
             message.trim(); // Remove any leading/trailing whitespace and control characters
 
             //Print all non-redundant messages for our viewing
-//            if (!message.equals("ping")) {
-//                Serial.println("Received: " + message);
-//            }
+            if (!message.equals("ping"))
+                Serial.println("Received: " + message);
 
             if (message.equals("ping")) {
                 humidifier.node.client.println("pong");
 
             } else if (message.equals("ready")) {
+                humidifier.performingAction(true);
                 delay(1000);
                 humidifier.sendCommand("report_status");
 
@@ -959,76 +970,84 @@ void loop() {
 
             if (message.equals("humidifier_reset") || message.equals("humidifier_on") || message.equals("humidifier_off") || message.startsWith("at_percentage:"))
                 humidifier.performingAction(false);
-
-
         }
     }
 
-    //Automate our humidifer based on existing parameters
-    if (!humidifier.settingTarget && humidifier.targetInt > 0 && humidifier.node.client.connected()) {
-        Sensor targetSensor = offboard_mid_sensor;
-        float avgPercent = (offboard_top_sensor.humidity + offboard_mid_sensor.humidity + offboard_bot_sensor.humidity) / 3;
 
-        int upperBuffer = 5;
-
-        if (humidifier.hitTarget && avgPercent < humidifier.targetInt)
-            humidifier.hitTarget = false;
-
-        if (!humidifier.hitTarget && avgPercent >= humidifier.targetInt + upperBuffer)
-            humidifier.hitTarget = true;
-
-        if (humidifier.hitTarget && humidifier.isOn) {
+    if (humidifier.node.client.connected()) {
+        if ((!PowerBtn::isOn() && humidifier.isOn) || (PowerBtn::isOn() && !humidifier.isOn))
             humidifier.togglePower();
-        } else {
-            // Calculate the inverse percentage of targetSensor.lastHum relative to humidifier.targetInt
-            int percentage = 100 - ((avgPercent * 100) / humidifier.targetInt);
 
-            if (humidifier.targetInt - avgPercent > 5)
-                percentage += 50;
+        if (PowerBtn::isOn()) {
 
-            // Ensure percentage is within 0 to 100 bounds
-            percentage = max(0, min(percentage, 100));
+            //Automate our humidifer based on existing parameters
+            if (!humidifier.settingTarget && humidifier.targetInt > 0) {
+                Sensor targetSensor = offboard_mid_sensor;
+                float avgPercent =
+                        (offboard_top_sensor.humidity + offboard_mid_sensor.humidity + offboard_bot_sensor.humidity) /
+                        3;
 
+                int upperBuffer = 5;068u
 
-            if (avgPercent >= humidifier.targetInt && targetSensor.lastHum < humidifier.targetInt + upperBuffer)
-                percentage = 1;
+                if (humidifier.hitTarget && avgPercent < humidifier.targetInt)
+                    humidifier.hitTarget = false;
 
-            if (avgPercent < humidifier.targetInt - 10)
-                percentage = 100;
-            else
-                percentage = 50;
+                if (!humidifier.hitTarget && avgPercent >= humidifier.targetInt + upperBuffer)
+                    humidifier.hitTarget = true;
 
-            if (percentage != humidifier.currentPercentage) {
-                Serial.println("Setting humidifier to; " + String(percentage));
-                if ((humidifier.isOn && percentage <= 0) || (!humidifier.isOn && percentage > 0))
+                if (humidifier.hitTarget && humidifier.isOn) {
                     humidifier.togglePower();
+                } else {
+                    // Calculate the inverse percentage of targetSensor.lastHum relative to humidifier.targetInt
+                    int percentage = 100 - ((avgPercent * 100) / humidifier.targetInt);
 
-                humidifier.setByPercentage(percentage);
+                    if (humidifier.targetInt - avgPercent > 5)
+                        percentage += 50;
+
+                    // Ensure percentage is within 0 to 100 bounds
+                    percentage = max(0, min(percentage, 100));
+
+
+                    if (avgPercent >= humidifier.targetInt && targetSensor.lastHum < humidifier.targetInt + upperBuffer)
+                        percentage = 1;
+
+                    if (avgPercent < humidifier.targetInt - 10)
+                        percentage = 100;
+                    else
+                        percentage = 50;
+
+                    if (percentage != humidifier.currentPercentage) {
+                        Serial.println("Setting humidifier to; " + String(percentage));
+                        if ((humidifier.isOn && percentage <= 0) || (!humidifier.isOn && percentage > 0))
+                            humidifier.togglePower();
+
+                        humidifier.setByPercentage(percentage);
+                    }
+                }
             }
+
+            //Basic fan logic
+            if (fanTimer > 0) {
+                fanTimer--;
+                if (fanTimer % 100 == 0)
+                    refreshScreen = true;
+
+            } else {
+                if (fanOn) {
+                    fanTimer = fanOffInterval;
+                    fanOn = false;
+                } else {
+                    fanTimer = fanOnInterval;
+                    fanOn = true;
+                }
+            }
+
+            if (fanOn && humidifier.isOn)
+                Fan::on();
+            else
+                Fan::off();
         }
-
     }
-
-    //Basic fan logic
-    if (fanTimer > 0) {
-        fanTimer--;
-        if (fanTimer % 100 == 0)
-            refreshScreen = true;
-
-    } else {
-        if (fanOn) {
-            fanTimer = fanOffInterval;
-            fanOn = false;
-        } else {
-            fanTimer = fanOnInterval;
-            fanOn = true;
-        }
-    }
-
-    if (fanOn && humidifier.isOn)
-        Fan::on();
-    else
-        Fan::off();
 
     //Catch remote commands
     if (IrReceiver.decode()) {
